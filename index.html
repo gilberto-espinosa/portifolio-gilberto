@@ -1,207 +1,1221 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seu Vigário</title>
+    <meta
+      name="description"
+      content="Desenvolvedor Fullstack, Java & Angular "
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifólio - Gilberto</title>
-  <meta name="description" content="Desenvolvedor Fullstack, Java & Angular ">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <header class="header">
-    <img src="./img/porti-logo.svg" alt="Lobo" width="104" height="38">
-    <nav>
-      <ul class="header__menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="introducao">
-    <img src="./img/perfil-gil.jpg" alt="Lobo Cinza" width="360" height="520">
-    <div>
-      <h1>Desenvolvedor<br> Full Stack.</h1>
-      <h2>Gilberto da Silva Espinoso</h2>
-      <p>São Gonçalo / RJ</p>
-    </div>
-  </main>
-
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="subtitulo">Experiência</h2>
-    <div>
-      <p class="experiencia__texto">
-       Desenvolvi pequenos projetos utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> , <strong>JavaScript</strong> e <strong>Angular</strong>. <br>Também possuo conhecimento em Back End na construção de <strong>APIs</strong> e no manipulamento de banco de dados <strong>SQL</strong>. <br> Minha Linguagem principal atualmente <strong>JAVA</strong>.
-      </p>
-
-      <h2 class="subtitulo-projetos">Meus Projetos</h2>
-
-      <div class="projeto">
-        <span class="projeto__ano">2024</span>
-        <h3 class="projeto__titulo">Whitpace</h3>
-        <span class="projeto__titulo">Lading page</span>
-        <p class="projeto__texto">Um site simples porém moderno, feito apenas com HTML, CSS, e JavaScript. Todo o projeto foi feito do zero.</p>
-        <ul class="projeto__habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-        <div class="projeto__links">
-          <span>
-            <a href="https://main--whitepace-landing.netlify.app/" target="_blank"><i class="fa fa-external-link"></i>Site</a>
-          </span>
-          <span>
-            <a href="https://github.com/GilbertoSEspinoso/landing-page-whitepace" target="_blank"><i class="fa fa-github"></i>Github</a>
-          </span>
+  <body>
+    <header class="header">
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            Menu
+          </button>
+          <div
+            class="offcanvas offcanvas-end bg-warning-subtle"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel">
+                Cardápio
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <span class="text-center fs-3 font-bold">~Acesso Rápido~</span>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle fs-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Comidas
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#nossacostela"
+                        >Costela</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item fw-semibold"
+                        href="#nossochurrasco"
+                        >Churrasco</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#guarnicoes"
+                        >Guarnições</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item fw-semibold"
+                        href="#pratochurrasco"
+                        >Prato Churrasco</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item fw-semibold"
+                        href="#pratoexecutivo"
+                        >Pratos Executivos</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#caldododia"
+                        >Caldo do Dia</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#lanches"
+                        >Lanches</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#petiscos"
+                        >Petiscos</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#molhos"
+                        >Molhos</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#sobremesas"
+                        >Sobremesas</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle fs-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Bebidas
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#semalcool"
+                        >Sem Álcool</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#cervejas"
+                        >Cervejas</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#doses"
+                        >Doses</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#drinks"
+                        >Drinks</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-semibold" href="#combos"
+                        >Combos</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active dropdown-item"
+                    aria-current="page"
+                    href="#contato"
+                    >Contatos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/"
+                    >Início</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="projeto">
-        <span class="projeto__ano">2023</span>
-        <h3 class="projeto__titulo">Bikcraft</h3>
-        <span class="projeto__titulo">Lading page</span>
-        <p class="projeto__texto">Site responsivo com HTML, CSS e Javascript.</p>
-        <ul class="projeto__habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>UX Design</li>
-        </ul>
-        <div class="projeto__links">
-          <span>
-            <a href="https://bikcraftii.netlify.app/" target="_blank"><i class="fa fa-external-link"></i>Site</a>
-          </span>
-          <span>
-            <a href="https://github.com/GilbertoSEspinoso/bikcraft" target="_blank"><i class="fa fa-github"></i>Github</a>
-          </span>
+    <div class="background__image">
+      <main class="introducao">
+        <div class="imagem">
+          <img src="./img/logo-seu-vigario.png" alt="logo do bar" width="240" />
         </div>
-      </div>
-
-      <div class="projeto">
-        <span class="projeto__ano">2023</span>
-        <h3 class="projeto__titulo">HelpDesk</h3>
-        <span class="projeto__titulo">Sistema de Controle de chamados</span>
-        <p class="projeto__texto">Prejeto Fullstack utilizando Java/spring boot no backend e Angular 12 no front. O sistema é responsável pela abertura e acompanhamento dos serviços para diversos tipos de clientes, designando esses serviços para os técnicos cadastrados no sistema.</p>
-        <ul class="projeto__habilidades">
-          <li>HTML5</li>
-          <li>CSS3</i></li>
-          <li>JavaScript</li>
-          <li>Angular</li>
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>SQL</li>
-        </ul>
-        <div class="projeto__links">
-          <!-- <span>
-            <a href="/"><i class="fa fa-external-link"></i>Site</a>
-          </span> -->
-          <span>
-            <a href="https://github.com/GilbertoSEspinoso/helpdesk" target="_blank"><i class="fa fa-github"></i>Github</a>
-          </span>
+        <div class="titulo">
+          <p>CARDÁPIO</p>
         </div>
-      </div>
+      </main>
 
-      <div class="projeto">
-        <span class="projeto__ano">2023</span>
-        <h3 class="projeto__titulo">DScommerce</h3>
-        <span class="projeto__titulo">Comércio Eletrônico</span>
-        <p class="projeto__texto">API REST de um comércio eletrônico, com validação e verificação de login com autenticação utilizando JWT, Oauth2 e Spring Security.</p>
-        <ul class="projeto__habilidades">
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>Spring Security</li>
-          <li>JWT</li>
-          <li>SQL</li>
-        </ul>
-        <div class="projeto__links">
-          <!-- <span>
-            <a href="/"><i class="fa fa-external-link"></i>Site</a>
-          </span> -->
-          <span>
-            <a href="https://github.com/GilbertoSEspinoso/dscommerce" target="_blank"><i class="fa fa-github"></i>Github</a>
-          </span>
-        </div>
-      </div>
+      <section class="cardapio" aria-label="Cardápio">
+        <!-- Comidas ------------------------------ -->
 
-    </div>
-  </section>
-
-  <section class="formacao" id="formacao" aria-label="Formação">
-    <div class="formacao__container">
-      <h2 class="subtitulo">Formação</h2>
-
-      <div>
-        <p class="formacao__texto">
-          Minha mais recente experiência acadêmica foi o <strong>Bootcamp</strong> oferecido pelo <strong>Santander</strong> em parceria com a plataforma <strong>DIO</strong> de desenvolvimento <strong>Fullstack Java + Angular</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
-        </p>
-        <ul class="faculdade__lista">
-          <!-- <li class="faculdade">
-            <span class="faculdade__tipo">Bacharel</span>
-            <h3 class="faculdade__curso">Administração de Empresas</h3>
-            <span class="faculdade__instituicao">UFRRJ</span>
-          </li> -->
-          <li class="faculdade">
-            <span class="faculdade__tipo">Tecnólogo</span>
-            <h3 class="faculdade__curso">Anásile e Desenvolvimento de Sistemas</h3>
-            <p class="faculdade__descricao">5º semestre | Previsão de término para 07/2024</p>
-            <span class="faculdade__instituicao">Centro Universitário - FAM</span>
-          </li>
-          <!-- <li class="faculdade">
-            <span class="faculdade__tipo">Mestre</span>
-            <h3 class="faculdade__curso">User Experience Design</h3>
-            <span class="faculdade__instituicao">UCLL</span>
-          </li> -->
-        </ul>
-
-        <div class="formacao__extra">
-          <div class="cursos">
-            <h3>Cursos intensivos</h3>
-            <ul>
-              <li>Santander Bootcamp 2023 - Fullstack Java + Angular<span>DIO</span></li>
-              <li>Desenvolvimento Java com Cloud AWS<span>DIO</span></li>
-              <li>DevOps & Agile Culture<span>FIAP</span></li>
-              <li>Java Spring Professional<span>DevSuperior</span></li>
-              <li>HTML5, CSS e JavaScript para iniciantes<span>Origamid</span></li>
+        <div id="nossacostela"></div>
+        <div class="item_container">
+          <h2>NOSSA COSTELA</h2>
+          <p>1kg de costela assada ao molho barbecue, acompanha batata frita</p>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>INTEIRA</span>
+                  <span class="valor">64,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>MEIA</span>
+                  <span class="valor">44,99</span>
+                </div>
+              </li>
             </ul>
           </div>
-
-          <!-- <div class="idiomas">
-            <h3>Idiomas</h3>
-            <ul>
-              <li>Inglês <span>/ Fluente</span></li>
-              <li>Espanhol <span>/ Intermediário</span></li>
-            </ul>
-          </div> -->
         </div>
 
+        <div id="nossochurrasco"></div>
+        <div class="item_container">
+          <h2>NOSSO CHURRASCO</h2>
+          <p>Espetos</p>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Pão de Alho</span>
+                  <span class="valor">4,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Frango</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Linguiça Mineira</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Misto</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Salsichão</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Carne</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Kafta com Queijo</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Coração</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Queijo Coalho</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="guarnicoes"></div>
+        <div class="item_container">
+          <h2>GUARNIÇÕES</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Arroz</span>
+                  <span class="valor">8,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Maionese</span>
+                  <span class="valor">5,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Farofa</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Molho Vinagrete</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Feijão</span>
+                  <span class="valor">5,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Banana Frita</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Ovo de Codorna</span>
+                  <span class="valor">2,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="pratochurrasco"></div>
+        <div class="item_container">
+          <h2>PRATO CHURRASCO</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Simples</span>
+                  <span class="valor">15,99</span>
+                </div>
+                <p>1 Espeto, arroz, maionese, molho vinagrete e farofa</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Completo</span>
+                  <span class="valor">25,99</span>
+                </div>
+                <p>
+                  1 Espeto, arroz, maionese, molho vinagrete, farofa, batata
+                  frita, ovo de codorna e banana frita
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="pratoexecutivo"></div>
+        <div class="item_container">
+          <h2>PRATOS EXECUTIVOS</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Bife c/ Fritas</span>
+                  <span class="valor">24,99</span>
+                </div>
+                <p>Arroz, Feijão, Farofa, batata frita ou salada</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Filé de Peixe</span>
+                  <span class="valor">21,99</span>
+                </div>
+                <p>Arroz, Feijão, Farofa, batata frita ou salada</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Filé de Frango</span>
+                  <span class="valor">19,99</span>
+                </div>
+                <p>Arroz, Feijão, Farofa, batata frita ou salada</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Linguiça Mineira</span>
+                  <span class="valor">19,99</span>
+                </div>
+                <p>Arroz, Feijão, Farofa, batata frita ou salada</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="caldododia"></div>
+        <div class="item_container">
+          <h2>CALDO DO DIA</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Pequeno</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Grande</span>
+                  <span class="valor">18,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="lanches"></div>
+        <div class="item_container">
+          <h2>Lanches 🍔🍟</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>X Tudo</span>
+                  <span class="valor">12,00</span>
+                </div>
+                <p>Pão, carne, ovo, bacon, queijo, presunto e salada.</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>X Camarão</span>
+                  <span class="valor">25,00</span>
+                </div>
+                <p>
+                  Pão, camarão, queijo muçarela gratinado, cebola roxa e
+                  catupiry.
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Classic Vigário</span>
+                  <span class="valor">29,99</span>
+                </div>
+                <p>
+                  Blend da casa 160g, queijo muçarela, bacon, maionese da casa,
+                  tomate e alface. Acompanha fritas
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Derrame de Cheddar</span>
+                  <span class="valor">29,99</span>
+                </div>
+                <p>
+                  Blend da casa 160g, queijo Cheddar, bacon e cebola
+                  caramelizada. Acompanha fritas
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Lanche Kids</span>
+                  <span class="valor">15,99</span>
+                </div>
+                <p>6 nuggets. Acompanha fritas</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="petiscos"></div>
+        <div class="item_container">
+          <h2>PETISCOS</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Batata Frita</span>
+                  <span class="valor">24,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Batata Frita Supreme</span>
+                  <span class="valor">37,99</span>
+                </div>
+                <p>Acompanha: Cheddar, bacon e queijo muçarela gratinado</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Batata Vigarista</span>
+                  <span class="valor">44,99</span>
+                </div>
+                <p>Acompanha: catupiry original e camarão</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Aipim do vigário</span>
+                  <span class="valor">54,99</span>
+                </div>
+                <p>Aipim frito, carne seca acebolada e queijo coalho.</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Bolinho de Bacalhau (10un.)</span>
+                  <span class="valor">29,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Bolinho de Feijoada (6un.)</span>
+                  <span class="valor">23,99</span>
+                </div>
+                <p>
+                  Massa especial da casa, carne seca desfiada, bacon, calabresa
+                  e couve
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Camarão ao Alho e Óleo</span>
+                  <span class="valor">39,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Porção de coração</span>
+                  <span class="valor">54,99</span>
+                </div>
+                <p>
+                  1 kg de coração de frango no azeite, temperados com coentro,
+                  cebola e alho frito.
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Carpaccio Vigário</span>
+                  <span class="valor">29,99</span>
+                </div>
+                <p>
+                  Carpaccio de carne, alcaparras, lascas de queijo parmesão,
+                  fios de azeite, rúcula e acompanha torradas da casa.
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Churrasco Mix</span>
+                  <span class="valor">64,99</span>
+                </div>
+                <p>
+                  Tiras de contra filé, pedaçõs de frango, linguiça mineira e
+                  fritas. Acompanha vinagrete e farofa.
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Filé ao Gorgonzola</span>
+                  <span class="valor">54,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Frango a Passarinho</span>
+                  <span class="valor">34,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Franguitos (6un.)</span>
+                  <span class="valor">18,99</span>
+                </div>
+                <p>
+                  Coxinhas de frango empanados, acompanha 1 molho de sua
+                  preferência.
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Franguitos (12un.)</span>
+                  <span class="valor">34,99</span>
+                </div>
+                <p>Acompanha 2 molhos</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gurjão de Frango</span>
+                  <span class="valor">34,99</span>
+                </div>
+                <p>adicione batata frita por apenas R$15,00</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gurjão de Peixe</span>
+                  <span class="valor">44,99</span>
+                </div>
+                <p>adicione batata frita por apenas R$15,00</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Pastéis Diversos (6uni.)</span>
+                  <span class="valor">19,99</span>
+                </div>
+                <p>Carne e Queijo</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Pastéis de Camarão (6un.)</span>
+                  <span class="valor">24,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Tábua de frios</span>
+                  <span class="valor">35,99</span>
+                </div>
+                <p>
+                  Salame, Queijo provolone, queijo muçarela, porção de azeitonas
+                  e ovos de cordona
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="molhos"></div>
+        <div class="item_container">
+          <h2>MOLHOS</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>BBQ</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>BBQ HOT</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Blue Cheese</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Molho de Cheddar</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Maionese da casa</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="sobremesas"></div>
+        <div class="item_container">
+          <h2>SOBREMESAS 🧁</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Brownie</span>
+                  <span class="valor">8,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Doce de Leite</span>
+                  <span class="valor">8,99</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Nutella</span>
+                  <span class="valor">13,99</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bebidas">
+          <h2>Bebidas</h2>
+        </div>
+
+        <!-- Bebidas ---------------------------------------------------- -->
+
+        <div></div>
+        <div class="item_container" id="semalcool">
+          <h2>BEBIDAS</h2>
+          <p>S/ Àlcool</p>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Água s/ gás</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Água c/ gás</span>
+                  <span class="valor">4,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Água de coco</span>
+                  <span class="valor">5,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Água tônica</span>
+                  <span class="valor">6,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Ice tea</span>
+                  <span class="valor">6,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Refrigerante garrafa KS</span>
+                  <span class="valor">5,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Refrigerante Lata</span>
+                  <span class="valor">6,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Schweppes cítrus</span>
+                  <span class="valor">6,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Suco Del Valle</span>
+                  <span class="valor">6,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Suco Kapo</span>
+                  <span class="valor">4,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Suco Natural</span>
+                  <span class="valor">8,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Guaravita</span>
+                  <span class="valor">3,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Monster</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Red bull</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Heineken 0 álcool</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Coca cola 2 litros</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Guaraná antártica 2 litros</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+              <li>
+                <p class="mt-4">C/ ÁLCOOL</p>
+                <div class="item">
+                  <span>Chopp</span>
+                  <span class="valor">6,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Vinho</span>
+                  <span class="valor">8,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Ice</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Skol Beats</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Pink Moon</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cervejas"></div>
+        <div class="item_container">
+          <h2>CERVEJAS 🍻</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <p class="mt-4">Garrafa 600ml</p>
+                <div class="item">
+                  <span>Amstel</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Antártica</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Brahma</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Eisenbahn</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Heineken</span>
+                  <span class="valor">13,00</span>
+                </div>
+              </li>
+              <li>
+                <p class="mt-4">Latão 473ml</p>
+                <div class="item">
+                  <span>Antártica</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Amstel</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Brahma</span>
+                  <span class="valor">9,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Heineken</span>
+                  <span class="valor">11,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="doses"></div>
+        <div class="item_container">
+          <h2>DOSES</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>cACHAÇA mINEIRA</span>
+                  <span class="valor">5,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Conhaque Domeq</span>
+                  <span class="valor">5,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Licor 43</span>
+                  <span class="valor">25,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Tequila Nacional</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Tequila José Cuervo Gold</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Bombay</span>
+                  <span class="valor">20,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Gordon's</span>
+                  <span class="valor">10,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Tanqueray</span>
+                  <span class="valor">20,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Vodka Absolut</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Whisky Red Label</span>
+                  <span class="valor">15,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Whisky Black Label</span>
+                  <span class="valor">25,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Whisky Gold Label</span>
+                  <span class="valor">35,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="drinks"></div>
+        <div class="item_container">
+          <h2>DRINKS 🍸</h2>
+          <div class="item-card">
+            <ul class="items">
+              <li>
+                <div class="item">
+                  <span>Alexander</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>
+                  Conhaque, licor de creme de cacau, leite condensado e canela
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Aperol Spritz</span>
+                  <span class="valor">25,00</span>
+                </div>
+                <p>Aperol prosseco ou água com gás e laranja</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Caipirinha Limão</span>
+                  <span class="valor">15,00</span>
+                </div>
+                <p>cachaça, limão e açucar</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Caipvodka Sabores</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>Vodka, fruta escolhida e açucar</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Coconut</span>
+                  <span class="valor">25,00</span>
+                </div>
+                <p>Gin, leite de coco, leite condensado, e redbull coco</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Tônica</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>Gin, limão e água tônica</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Stamberry</span>
+                  <span class="valor">25,00</span>
+                </div>
+                <p>Gin, morango, suco de morango e espuma de morango</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Tropical</span>
+                  <span class="valor">25,00</span>
+                </div>
+                <p>Gin, laranja e redbull tropical</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gin Pitaya</span>
+                  <span class="valor">25,00</span>
+                </div>
+                <p>Gin, pitaya, açucar e redbull pitaya</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Lagoa Azul</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>Suco de limão, açucar, rum, vodka, curaçau blue e soda.</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Marquerita</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>Suco de Limão, tequila gold e licor de laranja</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Mojito</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>Suco de limão, açucar, hortelã, rum e soda.</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Moscow Mule</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>
+                  Vodka, suco de limão, xarope de gengibre e espuma de gengibre
+                </p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Pink Lemonade</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>Gin, limão siciliano e água de princersa</p>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Vigarista</span>
+                  <span class="valor">20,00</span>
+                </div>
+                <p>Vodka, morango e limão</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="combos"></div>
+        <div class="item_container">
+          <h2>COMBOS</h2>
+          <div class="item-card">
+            <ul class="items">
+              <p>VODKA</p>
+              <li>
+                <div class="item">
+                  <span>Absolut + 6 Red Bull</span>
+                  <span class="valor">240,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Smirnoff + 6 Red Bull</span>
+                  <span class="valor">180,00</span>
+                </div>
+              </li>
+              <li>
+                <p class="mt-4">WHISKY</p>
+                <div class="item">
+                  <span>Black Label + 6 red bull</span>
+                  <span class="valor">320,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Red Label + 6 Red bull</span>
+                  <span class="valor">240,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Gold Label + 6 Red bull</span>
+                  <span class="valor">420,00</span>
+                </div>
+              </li>
+              <li>
+                <p class="mt-4">GIN</p>
+                <div class="item">
+                  <span>Gordon's + 6 Red bull</span>
+                  <span class="valor">220,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Bombay + 6 red bull</span>
+                  <span class="valor">320,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <span>Tanqueray + 6 Red bull</span>
+                  <span class="valor">320,00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer" id="contato">
+      <div class="footer__container">
+        <!-- <p class="footer__texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p> -->
+        <h1>SEU VIGÁRIO</h1>
+        <p>Gastrobar</p>
+        <ul class="footer__contato">
+          <li>
+            <a href="https://wa.me/5521972031896" target="_blank"
+              ><img src="img/whatsapp.png" alt="whatsapp"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/seuvigario/"
+              ><img src="img/instagram.png" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+        <p class="footer__copy">Desenvolvido por Gilberto Espinosa.</p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <footer class="footer" id="contato">
-    <div class="footer__container">
-      <!-- <p class="footer__texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p> -->
-      <h1>gilberto.espinoso@gmail.com</h1>
-      <ul class="footer__contato">
-        <li><a href="https://wa.me/5521992576144" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a></li>
-        <li><a href="https://www.linkedin.com/in/gilbertoespns/"><img src="img/linkedin.png" alt="Linkedin"></a></li>
-        <li><a href="https://github.com/GilbertoSEspinoso"><img src="img/github.png" alt="github"></a></li>
-        <li><a href="https://www.instagram.com/gbtospinosa/?next=%2F"><img src="img/instagram.png" alt="instagram"></a></li>
-      </ul>
-      <p class="footer__copy">Desenvolvido por Gilberto da Silva Espinoso.</p>
-    </div>
-  </footer>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
