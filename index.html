@@ -273,8 +273,8 @@
     </div>
 
     <!-- SESSAO CARDS DESTAQUE INICIO -->
-    <div class="container row mx-auto mb-5">
-      <div class="col-12 col-md-6 col-xl-4">
+    <div class="row mx-auto mb-5">
+      <div class="bg-destaque col-12 col-md-6 col-xl-4">
         <div class="card rounded-0">
           <div class="destaque">
             <img
@@ -283,8 +283,8 @@
               alt="homem preto de blaze azul, camisa branca e sorrindo"
             />
             <div class="card-body">
-              <h5 class="card-title fs-4">Dia 23/04</h5>
-              <p class="card-text">
+              <h5 class="card-title fs-3">Dia 23/04</h5>
+              <p class="card-text fs-5">
                 Feriado de São Jorge, venha nos prestigiar com a sua presença!
                 Teremos feijoada a partir das 16h.
               </p>
@@ -524,7 +524,10 @@
 
       <div id="caldododia"></div>
       <div class="item_container">
-        <h2>CALDO DO DIA</h2>
+          <a data-bs-toggle="modal" data-bs-target="#md-caldo">
+            <h2>CALDO DO DIA</h2>
+            <i class="bi bi-camera-fill"></i>
+          </a>
         <div class="item-card">
           <ul class="items">
             <li>
@@ -615,8 +618,8 @@
                 <div>
                   <a data-bs-toggle="modal" data-bs-target="#md-batata">
                     <i class="bi bi-camera-fill"></i>
+                    <span>Batata Frita</span>
                   </a>
-                  <span>Batata Frita</span>
                 </div>
                 <span class="valor">25,00</span>
               </div>
@@ -727,7 +730,12 @@
             </li>
             <li>
               <div class="item">
-                <span>Filé ao Gorgonzola</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-gorgonzola">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Filé ao Gorgonzola</span>
+                  </a>
+                </div>
                 <span class="valor">60,00</span>
               </div>
             </li>
@@ -749,7 +757,12 @@
             </li>
             <li>
               <div class="item">
-                <span>Franguitos (12un.)</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-franguitos">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Franguitos (12uni.)</span>
+                  </a>
+                </div>
                 <span class="valor">35,00</span>
               </div>
               <p>Acompanha 2 molhos</p>
@@ -788,7 +801,12 @@
             </li>
             <li>
               <div class="item">
-                <span>Tábua de frios</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-frios">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Tábua de frios</span>
+                  </a>
+                </div>
                 <span class="valor">36,00</span>
               </div>
               <p>
@@ -1253,7 +1271,12 @@
             </li>
             <li>
               <div class="item">
-                <span>Mojito</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-mojito">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Mojito</span>
+                  </a>
+                </div>
                 <span class="valor">20,00</span>
               </div>
               <p>Suco de limão, açucar, hortelã, rum e soda.</p>
@@ -1401,6 +1424,91 @@
             ></button>
           </div>
           <img src="/assets/photo/custela.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Caldo -->
+    <div class="modal fade" tabindex="-1" id="md-caldo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/caldo.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Franguitos -->
+    <div class="modal fade" tabindex="-1" id="md-franguitos" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/franquitos.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- frios -->
+    <div class="modal fade" tabindex="-1" id="md-frios" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/frios.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- gorgonzola -->
+    <div class="modal fade" tabindex="-1" id="md-gorgonzola" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/gorgonzola.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mojito -->
+    <div class="modal fade" tabindex="-1" id="md-mojito" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/mojito.png" alt="" />
         </div>
       </div>
     </div>

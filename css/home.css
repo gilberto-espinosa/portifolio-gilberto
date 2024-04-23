@@ -39,8 +39,23 @@
   font-style: italic;
 }
 
+.bg-destaque {
+  padding: 4rem 0;
+  background: rgb(15, 15, 15);
+  background: linear-gradient(
+    234deg,
+    rgba(15, 15, 15, 1) 0%,
+    rgba(18, 18, 18, 0.9663537289915967) 61%,
+    rgba(49, 50, 50, 1) 100%
+  );
+}
+.card {
+  padding: 0px !important;
+  background-color: rgba(169, 157, 108, 1) !important;
+}
+
 .destaque {
-  border: 5px solid rgba(169, 157, 108, 1);
+  border: 1px solid rgba(169, 157, 108, 1);
 }
 
 .card-body {
@@ -56,7 +71,7 @@
 .promocoes {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .promocoes img {
@@ -144,9 +159,9 @@ form {
 
 /*  Modal ------------- */
 
-.modal-content img{
+.modal-content img {
   border-left: 3px solid rgba(68, 62, 40, 1);
-  border-bottom:  2px solid rgb(180, 165, 103);
+  border-bottom: 2px solid rgb(180, 165, 103);
   border-right: 2px solid #f3c67f;
 }
 
