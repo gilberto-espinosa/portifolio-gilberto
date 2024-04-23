@@ -1,10 +1,10 @@
 .carousel {
-  margin-top: 3.5rem;
+  margin-top: 3.4rem;
 }
 
 .btn {
   width: 100%;
-  box-shadow: -11px 11px 0px -3px rgba(0, 0, 0, 0.29);
+  box-shadow: -7px 8px 0px -3px #a99d6c;
   background: rgb(15, 15, 15);
   background: linear-gradient(
     234deg,
@@ -13,6 +13,54 @@
     rgba(49, 50, 50, 1) 100%
   );
   font-weight: 600;
+}
+
+.titulo-destaque {
+  width: 70vw;
+  margin: 6rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-destaque img {
+  width: 150px;
+}
+
+.titulo-destaque h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+}
+
+.titulo-destaque span {
+  color: #a99d6c;
+  font-style: italic;
+}
+
+.destaque {
+  border: 5px solid rgba(169, 157, 108, 1);
+}
+
+.card-body {
+  background: rgb(68, 62, 40);
+  background: linear-gradient(
+    24deg,
+    rgba(68, 62, 40, 1) 0%,
+    rgb(180, 165, 103) 61%,
+    #f3c67f 100%
+  );
+}
+
+.promocoes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.promocoes img {
+  box-shadow: -50px 20px 0px -10px #a99d6c;
 }
 
 /* Cardapio ----------- */
@@ -34,7 +82,6 @@ p {
   flex-direction: column;
   padding: 3rem 1.5rem;
   margin-top: 4rem;
-  /* border-bottom: 8px solid #ffc94a; */
   background: rgb(15, 15, 15);
   background: linear-gradient(
     234deg,
@@ -42,19 +89,19 @@ p {
     rgba(18, 18, 18, 0.9663537289915967) 61%,
     rgba(49, 50, 50, 1) 100%
   );
-  box-shadow: -11px 20px 0px -3px rgba(0, 0, 0, 0.29);
+  box-shadow: -50px 20px 0px -10px #a99d6c;
 }
 
 .item_container > h2 {
   font-size: 1.75rem;
   line-height: 1.25rem;
-  color: #ffc94a;
+  color: #a99d6c;
 }
 
 .item_container p {
   font-size: 0.85rem;
   line-height: 1.2rem;
-  color: #fba834;
+  color: #ffcd7c;
   font-style: italic;
 }
 
@@ -65,7 +112,7 @@ p {
 .item {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #f9f07a;
+  border-bottom: 1px solid #a99d6c;
   margin-top: 1.5rem;
   padding-bottom: 5px;
 }
@@ -82,4 +129,15 @@ p {
   font-weight: bold;
   text-align: center;
   margin-top: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram img {
+  margin-top: 1rem;
+  width: 40px;
 }
