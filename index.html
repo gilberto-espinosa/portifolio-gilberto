@@ -295,17 +295,17 @@
     </div>
 
     <div id="promo"></div>
-    <div class="titulo-destaque" >
+    <div class="titulo-destaque">
       <img src="./assets/logo-seu-vigario-base.png" alt="logo seu vigario" />
       <h2><span>Promoções</span>!</h2>
     </div>
 
     <div class="promocoes">
       <div>
-        <img src="./assets/Mobile/produtos/chopp-delivery.jpg" alt="">
+        <img src="./assets/Mobile/produtos/chopp-delivery.jpg" alt="" />
       </div>
       <div>
-        <img src="./assets/Mobile/produtos/happy-hour.jpg" alt="">
+        <img src="./assets/Mobile/produtos/happy-hour.jpg" alt="" />
       </div>
     </div>
 
@@ -326,7 +326,10 @@
             <li>
               <div class="item">
                 <div>
-                  <span>INTEIRA</span>
+                  <a data-bs-toggle="modal" data-bs-target="#md-costela">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>INTEIRA</span>
+                  </a>
                 </div>
                 <span class="valor">65,00</span>
               </div>
@@ -542,12 +545,17 @@
 
       <div id="lanches"></div>
       <div class="item_container">
-        <h2>LANCHES 🍔🍟</h2>
+        <h2>LANCHES 🍔</h2>
         <div class="item-card">
           <ul class="items">
             <li>
               <div class="item">
-                <span>X Tudo</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-xtudo">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>X Tudo</span>
+                  </a>
+                </div>
                 <span class="valor">12,00</span>
               </div>
               <p>Pão, carne, ovo, bacon, queijo, presunto e salada.</p>
@@ -573,7 +581,12 @@
             </li>
             <li>
               <div class="item">
-                <span>Derrame de Cheddar</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-derrame">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Derrame de Cheddar</span>
+                  </a>
+                </div>
                 <span class="valor">30,00</span>
               </div>
               <p>
@@ -599,27 +612,50 @@
           <ul class="items">
             <li>
               <div class="item">
-                <span>Batata Frita</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-batata">
+                    <i class="bi bi-camera-fill"></i>
+                  </a>
+                  <span>Batata Frita</span>
+                </div>
                 <span class="valor">25,00</span>
               </div>
             </li>
             <li>
               <div class="item">
-                <span>Batata Frita Supreme</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-batatasupreme">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Batata Frita Supreme</span>
+                  </a>
+                </div>
                 <span class="valor">38,00</span>
               </div>
               <p>Acompanha: Cheddar, bacon e queijo muçarela gratinado</p>
             </li>
             <li>
               <div class="item">
-                <span>Batata Vigarista</span>
+                <div>
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#md-batatavigarista"
+                  >
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Batata Vigarista</span>
+                  </a>
+                </div>
                 <span class="valor">45,00</span>
               </div>
               <p>Acompanha: catupiry original e camarão</p>
             </li>
             <li>
               <div class="item">
-                <span>Aipim do vigário</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-aipim">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Aipim do vigário</span>
+                  </a>
+                </div>
                 <span class="valor">55,00</span>
               </div>
               <p>Aipim frito, carne seca acebolada e queijo coalho.</p>
@@ -632,7 +668,15 @@
             </li>
             <li>
               <div class="item">
-                <span>Bolinho de Feijoada (6un.)</span>
+                <div>
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#md-bolinhodefeijoada"
+                  >
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Bolinho de Feijoada (6un.)</span>
+                  </a>
+                </div>
                 <span class="valor">24,00</span>
               </div>
               <p>
@@ -668,7 +712,12 @@
             </li>
             <li>
               <div class="item">
-                <span>Churrasco Mix</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-mix">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Churrasco Mix</span>
+                  </a>
+                </div>
                 <span class="valor">65,00</span>
               </div>
               <p>
@@ -721,7 +770,12 @@
             </li>
             <li>
               <div class="item">
-                <span>Pastéis Diversos (6uni.)</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-pasteis">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Pastéis Diversos (6uni.)</span>
+                  </a>
+                </div>
                 <span class="valor">20,00</span>
               </div>
               <p>Carne e Queijo</p>
@@ -813,7 +867,10 @@
                 <span>Taça de churros</span>
                 <span class="valor"></span>
               </div>
-              <p>4 minis churros afogados em uma imensidão de sabor de sua preferência</p>
+              <p>
+                4 minis churros afogados em uma imensidão de sabor de sua
+                preferência
+              </p>
             </li>
           </ul>
         </div>
@@ -1109,7 +1166,12 @@
           <ul class="items">
             <li>
               <div class="item">
-                <span>Alexander</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-alexander">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Alexander</span>
+                  </a>
+                </div>
                 <span class="valor">20,00</span>
               </div>
               <p>
@@ -1160,14 +1222,24 @@
             </li>
             <li>
               <div class="item">
-                <span>Gin Pitaya</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-pitaya">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Gin Pitaya</span>
+                  </a>
+                </div>
                 <span class="valor">25,00</span>
               </div>
               <p>Gin, pitaya, açucar e redbull pitaya</p>
             </li>
             <li>
               <div class="item">
-                <span>Lagoa Azul</span>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-lagoa">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Lagoa Azul</span>
+                  </a>
+                </div>
                 <span class="valor">20,00</span>
               </div>
               <p>Suco de limão, açucar, rum, vodka, curaçau blue e soda.</p>
@@ -1185,6 +1257,20 @@
                 <span class="valor">20,00</span>
               </div>
               <p>Suco de limão, açucar, hortelã, rum e soda.</p>
+            </li>
+            <li>
+              <div class="item">
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#md-pinacolada">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Piña Colada</span>
+                  </a>
+                </div>
+                <span class="valor">20,00</span>
+              </div>
+              <p>
+                Suco de abacaxi, açucar, leite condensado, leite de coco e rum.
+              </p>
             </li>
             <li>
               <div class="item">
@@ -1287,7 +1373,7 @@
       <p>Siga nossa página no instagram</p>
       <div class="instagram">
         <a href="https://www.instagram.com/seuvigario/">
-          <img src="./assets/icon/instagram.png" alt="instagram">
+          <img src="./assets/icon/instagram.png" alt="instagram" />
         </a>
       </div>
     </form>
@@ -1299,6 +1385,261 @@
         Seu Vigário - Gastrobar Gourmet
       </p>
     </footer>
+
+    <!-- SESAO MODAIS -->
+
+    <!-- costela -->
+    <div class="modal fade" tabindex="-1" id="md-costela" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/custela.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- aipim -->
+    <div class="modal fade" tabindex="-1" id="md-aipim" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/aipim-vigario.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Alexander -->
+    <div class="modal fade" tabindex="-1" id="md-alexander" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/alexander.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Batata Vigarista -->
+    <div
+      class="modal fade"
+      tabindex="-1"
+      id="md-batatavigarista"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/bataba-vigarista.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Batata simples -->
+    <div class="modal fade" tabindex="-1" id="md-batata" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/batata-simples.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- batata supreme -->
+    <div
+      class="modal fade"
+      tabindex="-1"
+      id="md-batatasupreme"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/batata-supreme.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Churrasco Mix -->
+    <div class="modal fade" tabindex="-1" id="md-mix" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/churraco-mix.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Derrame de cheddar -->
+    <div class="modal fade" tabindex="-1" id="md-derrame" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/derrame.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Gin Pitaya -->
+    <div class="modal fade" tabindex="-1" id="md-pitaya" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/gin-pitaya.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Lagoa Azul -->
+    <div class="modal fade" tabindex="-1" id="md-lagoa" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/lagoa-azul.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Pasteis -->
+    <div class="modal fade" tabindex="-1" id="md-pasteis" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/pasteis.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Pina Colada -->
+    <div class="modal fade" tabindex="-1" id="md-pinacolada" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/pina-colada.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- X tudo -->
+    <div class="modal fade" tabindex="-1" id="md-xtudo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/x-tudo.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bolinho de Feijoada -->
+    <div
+      class="modal fade"
+      tabindex="-1"
+      id="md-bolinhodefeijoada"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <img src="/assets/photo/bolinho-feijoada.png" alt="" />
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
