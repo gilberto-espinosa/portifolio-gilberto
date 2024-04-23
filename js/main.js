@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  var offcanvasLinks = document.querySelectorAll('#offcanvasNavbar .dropdown-item');
+  var navbarLinks = document.querySelectorAll('#navbarSupportedContent .nav-link');
 
-  offcanvasLinks.forEach(function(link) {
+  navbarLinks.forEach(function(link) {
       link.addEventListener('click', function() {
-          var bsOffcanvas = document.getElementById('offcanvasNavbar');
-          var bootstrapOffcanvas = bootstrap.Offcanvas.getInstance(bsOffcanvas);
-          bootstrapOffcanvas.hide();
+          var bsCollapse = document.getElementById('navbarSupportedContent');
+          var bootstrapCollapse = new bootstrap.Collapse(bsCollapse);
+          bootstrapCollapse.hide();
       });
   });
 });
-
